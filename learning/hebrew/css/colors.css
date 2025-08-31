@@ -1,0 +1,16 @@
+/* Colors game specific styles */
+
+/* The color swatch cells in the colors grid use inline background colors set in JS.
+   To ensure they appear uniform, set a minimum height. */
+#colorsGrid .cell {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Remove the default gradient so the color shows accurately */
+  background: none;
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* When tooltips are enabled, the English names appear on hover using the title attribute. */

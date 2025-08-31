@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hebrew Learning</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Shared and specific styles -->
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/letters.css" />
+  <link rel="stylesheet" href="css/icons.css" />
+  <link rel="stylesheet" href="css/colors.css" />
+</head>
+<body>
+  <h1>Hebrew Learning</h1>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="lettersTab">Letters</button>
+    <button class="tab-btn" data-tab="iconsTab">Icons</button>
+    <button class="tab-btn" data-tab="colorsTab">Colors</button>
+  </div>
+
+  <div id="lettersTab" class="tab-content active">
+    <div class="sub">Play matching and sequence games with Hebrew letters and names.</div>
+    <div class="bar">
+      <div class="modes">
+        <button class="mode-btn active" data-mode="ordered_match">Ordered Match</button>
+        <button class="mode-btn" data-mode="shuffled_match">Shuffled Match</button>
+        <button class="mode-btn" data-mode="sequence_names">Sequence — Names</button>
+        <button class="mode-btn" data-mode="sequence_chars">Sequence — Letters</button>
+        <button class="mode-btn" data-mode="sequence_keyboard">Sequence — Typing</button>
+      </div>
+      <button id="toggle" class="btn">Script: Hebrew</button>
+      <button id="shuffle" class="btn secondary">Shuffle</button>
+      <button id="reset" class="btn ghost">Reset Round</button>
+      <!-- Toggle tooltips for letters (transliteration shown on hover) -->
+      <button id="toggleLetterTooltips" class="btn ghost">Tooltips: Off</button>
+      <!-- Edit letters data (opens JSON editor) -->
+      <button id="editLettersData" class="btn ghost">Edit Data</button>
+      <span class="pill" id="remaining">22 remaining</span>
+      <span class="pill" id="nextTarget">Next: —</span>
+      <span class="pill" id="kbdStatus" style="display:none">Typing: active</span>
+    </div>
+
+    <div id="board" class="board">
+      <section id="lettersPanel" class="panel">
+        <h2>Letters</h2>
+        <div id="lettersGrid" class="grid"></div>
+      </section>
+      <section class="panel">
+        <h2 id="namesHdr">Names</h2>
+        <div id="namesGrid" class="grid"></div>
+      </section>
+    </div>
+
+    <section class="stats">
+      <div class="kpi">
+        <div class="label">Score (correct / total)</div>
+        <div class="value"><span id="scoreText">0 / 0</span></div>
+        <div class="meter"><div id="scoreBar" class="bar"></div></div>
+      </div>
+      <div class="kpi">
+        <div class="label">History (latest first)</div>
+        <div class="history" id="historyList"></div>
+      </div>
+    </section>
+
+    <!-- Letters data editor (hidden by default) -->
+    <div id="lettersEditor" style="display:none; margin-top: 20px;">
+      <h3>Edit Letters Data (JSON)</h3>
+      <textarea id="lettersEditorTextarea" style="width:100%; height:200px; border-radius:8px; border:1px solid #2a3368; background:linear-gradient(180deg,#1a2145,#141b3b); color:var(--text); padding:10px;"></textarea>
+      <div style="margin-top:10px; display:flex; gap:10px;">
+        <button id="saveLettersData" class="btn">Save</button>
+        <button id="cancelLettersEdit" class="btn ghost">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="iconsTab" class="tab-content">
+    <div class="sub">Match icons with their Hebrew names.</div>
+    <!-- Category selector for icons game -->
+    <div id="iconCategories" class="bar"></div>
+    <!-- Control bar: script toggle, shuffle, reset, max icons input -->
+    <div class="bar">
+      <button id="toggleIcons" class="btn">Script: Hebrew</button>
+      <button id="shuffleIcons" class="btn secondary">Shuffle</button>
+      <button id="resetIcons" class="btn ghost">Reset Game</button>
+      <!-- Max icons input: allows user to choose how many icons to include (default 18) -->
+      <label for="iconMax" style="color: var(--muted); margin-left: 10px;">Max Icons:</label>
+      <input type="number" id="iconMax" value="18" min="1" class="max-icons-input" style="width: 60px; border-radius: 8px; padding: 4px 6px; border: 1px solid #2a3368; background: linear-gradient(180deg, #1a2145, #141b3b); color: var(--text);" />
+      <!-- Toggle tooltips on/off for icons and names -->
+      <button id="toggleTooltips" class="btn ghost">Tooltips: Off</button>
+      <!-- Edit icons data (opens JSON editor) -->
+      <button id="editIconsData" class="btn ghost">Edit Data</button>
+      <!-- Display remaining icons count (will update dynamically) -->
+      <span class="pill" id="remainingIcons">18 remaining</span>
+    </div>
+    <div id="iconsBoard" class="board">
+      <section class="panel">
+        <h2>Icons</h2>
+        <div id="iconsGrid" class="grid"></div>
+      </section>
+      <section class="panel">
+        <h2 id="namesIconsHdr">Names</h2>
+        <div id="iconsNamesGrid" class="grid"></div>
+      </section>
+    </div>
+    <section class="stats">
+      <div class="kpi">
+        <div class="label">Score (correct / total)</div>
+        <div class="value"><span id="scoreIconsText">0 / 0</span></div>
+        <div class="meter"><div id="scoreIconsBar" class="bar"></div></div>
+      </div>
+      <div class="kpi">
+        <div class="label">History (latest first)</div>
+        <div class="history" id="historyIconsList"></div>
+      </div>
+    </section>
+    <!-- Icons data editor (hidden by default) -->
+    <div id="iconsEditor" style="display:none; margin-top:20px;">
+      <h3>Edit Icons Data (JSON)</h3>
+      <textarea id="iconsEditorTextarea" style="width:100%; height:200px; border-radius:8px; border:1px solid #2a3368; background:linear-gradient(180deg,#1a2145,#141b3b); color:var(--text); padding:10px;"></textarea>
+      <div style="margin-top:10px; display:flex; gap:10px;">
+        <button id="saveIconsData" class="btn">Save</button>
+        <button id="cancelIconsEdit" class="btn ghost">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colors matching game tab -->
+  <div id="colorsTab" class="tab-content">
+    <div class="sub">Match colors with their Hebrew names.</div>
+    <!-- Category selector for colors game -->
+    <div id="colorCategories" class="bar"></div>
+    <!-- Control bar: script toggle, shuffle, reset, max colors input, tooltip toggle -->
+    <div class="bar">
+      <button id="toggleColors" class="btn">Script: Hebrew</button>
+      <button id="shuffleColors" class="btn secondary">Shuffle</button>
+      <button id="resetColors" class="btn ghost">Reset Game</button>
+      <!-- Max colors input: allows user to choose how many colors to include (default 18) -->
+      <label for="colorMax" style="color: var(--muted); margin-left: 10px;">Max Colors:</label>
+      <input type="number" id="colorMax" value="18" min="1" class="max-colors-input" style="width: 60px; border-radius: 8px; padding: 4px 6px; border: 1px solid #2a3368; background: linear-gradient(180deg, #1a2145, #141b3b); color: var(--text);" />
+      <!-- Toggle tooltips on/off for color swatches and names -->
+      <button id="toggleColorTooltips" class="btn ghost">Tooltips: Off</button>
+      <!-- Edit colors data (opens JSON editor) -->
+      <button id="editColorsData" class="btn ghost">Edit Data</button>
+      <!-- Display remaining colors count (will update dynamically) -->
+      <span class="pill" id="remainingColors">— remaining</span>
+    </div>
+    <div id="colorsBoard" class="board">
+      <section class="panel">
+        <h2>Colors</h2>
+        <div id="colorsGrid" class="grid"></div>
+      </section>
+      <section class="panel">
+        <h2 id="namesColorsHdr">Names</h2>
+        <div id="colorsNamesGrid" class="grid"></div>
+      </section>
+    </div>
+    <section class="stats">
+      <div class="kpi">
+        <div class="label">Score (correct / total)</div>
+        <div class="value"><span id="scoreColorsText">0 / 0</span></div>
+        <div class="meter"><div id="scoreColorsBar" class="bar"></div></div>
+      </div>
+      <div class="kpi">
+        <div class="label">History (latest first)</div>
+        <div class="history" id="historyColorsList"></div>
+      </div>
+    </section>
+
+    <!-- Colors data editor (hidden by default) -->
+    <div id="colorsEditor" style="display:none; margin-top:20px;">
+      <h3>Edit Colors Data (JSON)</h3>
+      <textarea id="colorsEditorTextarea" style="width:100%; height:200px; border-radius:8px; border:1px solid #2a3368; background:linear-gradient(180deg,#1a2145,#141b3b); color:var(--text); padding:10px;"></textarea>
+      <div style="margin-top:10px; display:flex; gap:10px;">
+        <button id="saveColorsData" class="btn">Save</button>
+        <button id="cancelColorsEdit" class="btn ghost">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab switching script -->
+  <script src="js/main.js"></script>
+  <!-- Letters game script -->
+  <script src="js/letters.js"></script>
+  <!-- Letters data fallback script -->
+  <script src="data/lettersData.js"></script>
+  <!-- Icons data for categories fallback -->
+  <script src="data/iconsData.js"></script>
+  <!-- Icons game script -->
+  <script src="js/icons.js"></script>
+  <!-- Colors data fallback script -->
+  <script src="data/colorsData.js"></script>
+  <!-- Colors game script -->
+  <script src="js/colors.js"></script>
+</body>
+</html>

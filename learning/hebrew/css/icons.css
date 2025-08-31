@@ -1,0 +1,23 @@
+/* Icons game specific styles */
+
+/* Increase font size for Font Awesome icons in the icons grid */
+#iconsGrid .cell i {
+  font-size: 2em;
+  line-height: 1;
+}
+
+/* Adjust the spacing for names grid in the icons game */
+#iconsNamesGrid .cell {
+  font-size: clamp(14px, 3vw, 20px);
+}
+
+/* Styles for the category selector in the icons game */
+#iconCategories label {
+  color: var(--text);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#iconCategories input[type="checkbox"] {
+  margin-right: 4px;
+}

@@ -1,0 +1,26 @@
+{
+  "letters": [
+    { "id": "alef",   "he": "א", "nameHe": "אָלֶף",    "nameLat": "Alef" },
+    { "id": "bet",    "he": "ב", "nameHe": "בֵּית",    "nameLat": "Bet" },
+    { "id": "gimel",  "he": "ג", "nameHe": "גִּימֵל",   "nameLat": "Gimel" },
+    { "id": "dalet",  "he": "ד", "nameHe": "דָּלֶת",    "nameLat": "Dalet" },
+    { "id": "he",     "he": "ה", "nameHe": "הֵא",       "nameLat": "He" },
+    { "id": "vav",    "he": "ו", "nameHe": "וָו",       "nameLat": "Vav" },
+    { "id": "zayin",  "he": "ז", "nameHe": "זַיִן",     "nameLat": "Zayin" },
+    { "id": "chet",   "he": "ח", "nameHe": "חֵית",      "nameLat": "Ḥet" },
+    { "id": "tet",    "he": "ט", "nameHe": "טֵית",      "nameLat": "Tet" },
+    { "id": "yod",    "he": "י", "nameHe": "יוֹד",      "nameLat": "Yod" },
+    { "id": "kaf",    "he": "כ", "nameHe": "כַּף",      "nameLat": "Kaf" },
+    { "id": "lamed",  "he": "ל", "nameHe": "לָמֶד",     "nameLat": "Lamed" },
+    { "id": "mem",    "he": "מ", "nameHe": "מֵם",       "nameLat": "Mem" },
+    { "id": "nun",    "he": "נ", "nameHe": "נוּן",      "nameLat": "Nun" },
+    { "id": "samekh", "he": "ס", "nameHe": "סָמֶךְ",    "nameLat": "Samekh" },
+    { "id": "ayin",   "he": "ע", "nameHe": "עַיִן",     "nameLat": "Ayin" },
+    { "id": "pe",     "he": "פ", "nameHe": "פֵּא",       "nameLat": "Pe" },
+    { "id": "tsadi",  "he": "צ", "nameHe": "צַדִּי",    "nameLat": "Tsadi" },
+    { "id": "qof",    "he": "ק", "nameHe": "קוֹף",      "nameLat": "Qof" },
+    { "id": "resh",   "he": "ר", "nameHe": "רֵישׁ",     "nameLat": "Resh" },
+    { "id": "shin",   "he": "ש", "nameHe": "שִׁין",     "nameLat": "Shin" },
+    { "id": "tav",    "he": "ת", "nameHe": "תָּו",      "nameLat": "Tav" }
+  ]
+}
