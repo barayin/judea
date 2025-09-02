@@ -8,7 +8,7 @@
         {"id": "bicycle", "icon": "fa-bicycle", "nameHe": "אופניים", "nameLat": "Ofanayim"},
         {"id": "train", "icon": "fa-train", "nameHe": "רכבת", "nameLat": "Rakevet"},
         {"id": "plane", "icon": "fa-plane", "nameHe": "מטוס", "nameLat": "Matos"},
-        {"id": "ship", "icon": "fa-ship", "nameHe": "אנייה", "nameLat": "Ania"},
+        {"id": "ship", "icon": "fa-ship", "nameHe": "אנייה", "nameLat": "Oniya"},
         {"id": "motorcycle", "icon": "fa-motorcycle", "nameHe": "אופנוע", "nameLat": "Ofnoa"}
       ]
     },
@@ -16,26 +16,26 @@
       "category": "Animals & Nature",
       "items": [
         {"id": "dog", "icon": "fa-dog", "nameHe": "כלב", "nameLat": "Kelev"},
-        {"id": "cat", "icon": "fa-cat", "nameHe": "חתול", "nameLat": "Chatul"},
+        {"id": "cat", "icon": "fa-cat", "nameHe": "חתול", "nameLat": "Ḥatul"},
         {"id": "horse", "icon": "fa-horse", "nameHe": "סוס", "nameLat": "Sus"},
         {"id": "fish", "icon": "fa-fish", "nameHe": "דג", "nameLat": "Dag"},
-        {"id": "frog", "icon": "fa-frog", "nameHe": "צפרדע", "nameLat": "Tzfardea"},
-        {"id": "tree", "icon": "fa-tree", "nameHe": "עץ", "nameLat": "Etz"},
+        {"id": "frog", "icon": "fa-frog", "nameHe": "צפרדע", "nameLat": "Tsfardea"},
+        {"id": "tree", "icon": "fa-tree", "nameHe": "עץ", "nameLat": "Ets"},
         {"id": "sun", "icon": "fa-sun", "nameHe": "שמש", "nameLat": "Shemesh"},
-        {"id": "moon", "icon": "fa-moon", "nameHe": "ירח", "nameLat": "Yareach"}
+        {"id": "moon", "icon": "fa-moon", "nameHe": "ירח", "nameLat": "Yareaḥ"}
       ]
     },
     {
       "category": "Food & Drink",
       "items": [
-        {"id": "apple", "icon": "fa-apple-whole", "nameHe": "תפוח", "nameLat": "Tapuach"},
+        {"id": "apple", "icon": "fa-apple-whole", "nameHe": "תפוח", "nameLat": "Tapuaḥ"},
         {"id": "carrot", "icon": "fa-carrot", "nameHe": "גזר", "nameLat": "Gezer"},
-        {"id": "bread", "icon": "fa-bread-slice", "nameHe": "לחם", "nameLat": "Lechem"},
+        {"id": "bread", "icon": "fa-bread-slice", "nameHe": "לחם", "nameLat": "Leḥem"},
         {"id": "cheese", "icon": "fa-cheese", "nameHe": "גבינה", "nameLat": "Gvina"},
         {"id": "pizza", "icon": "fa-pizza-slice", "nameHe": "פיצה", "nameLat": "Pizza"},
         {"id": "burger", "icon": "fa-burger", "nameHe": "המבורגר", "nameLat": "Hamburger"},
         {"id": "icecream", "icon": "fa-ice-cream", "nameHe": "גלידה", "nameLat": "Glida"},
-        {"id": "mug", "icon": "fa-mug-hot", "nameHe": "ספל", "nameLat": "Seffel"}
+        {"id": "mug", "icon": "fa-mug-hot", "nameHe": "ספל", "nameLat": "Sefel"}
       ]
     },
     {
@@ -44,7 +44,7 @@
         {"id": "house", "icon": "fa-house", "nameHe": "בית", "nameLat": "Bayit"},
         {"id": "building", "icon": "fa-building", "nameHe": "בניין", "nameLat": "Binyan"},
         {"id": "school", "icon": "fa-school", "nameHe": "בית ספר", "nameLat": "Beit Sefer"},
-        {"id": "hospital", "icon": "fa-hospital", "nameHe": "בית חולים", "nameLat": "Beit Cholim"},
+        {"id": "hospital", "icon": "fa-hospital", "nameHe": "בית חולים", "nameLat": "Beit Ḥolim"},
         {"id": "bed", "icon": "fa-bed", "nameHe": "מיטה", "nameLat": "Mita"},
         {"id": "chair", "icon": "fa-chair", "nameHe": "כיסא", "nameLat": "Kise"},
         {"id": "couch", "icon": "fa-couch", "nameHe": "ספה", "nameLat": "Sapa"},
@@ -57,24 +57,9 @@
         {"id": "user", "icon": "fa-user", "nameHe": "אדם", "nameLat": "Adam"},
         {"id": "users", "icon": "fa-users", "nameHe": "אנשים", "nameLat": "Anashim"},
         {"id": "child", "icon": "fa-child", "nameHe": "ילד", "nameLat": "Yeled"},
-        {"id": "running", "icon": "fa-person-running", "nameHe": "רץ", "nameLat": "Ratz"},
-        {"id": "walking", "icon": "fa-person-walking", "nameHe": "הולך", "nameLat": "Holech"},
-        {"id": "swimming", "icon": "fa-person-swimming", "nameHe": "שוחה", "nameLat": "Sohe"},
-        {"id": "biking", "icon": "fa-person-biking", "nameHe": "בייקינג", "nameLat": "Biking"},
-        {"id": "hiking", "icon": "fa-person-hiking", "nameHe": "הייקינג", "nameLat": "Hiking"},
-        {"id": "snowboarding", "icon": "fa-person-snowboarding", "nameHe": "סנובורדינג", "nameLat": "Snowboarding"},
-        {"id": "skiing", "icon": "fa-person-skiing", "nameHe": "סקי", "nameLat": "Skiing"}
-      ]
-    },
-
-    {
-      "category": "UI Actions",
-      "items": [
-        {"id": "download", "icon": "fa-download", "nameHe": "הורדה", "nameLat": "Horada"},
-        {"id": "upload", "icon": "fa-upload", "nameHe": "העלאה", "nameLat": "Haala"},
-        {"id": "share", "icon": "fa-share", "nameHe": "שיתוף", "nameLat": "Shituf"},
-        {"id": "pause", "icon": "fa-pause", "nameHe": "השהייה", "nameLat": "Hashaya"},
-        {"id": "stop", "icon": "fa-stop", "nameHe": "עצור", "nameLat": "Atzor"}
+        {"id": "running", "icon": "fa-person-running", "nameHe": "רץ", "nameLat": "Rats"},
+        {"id": "walking", "icon": "fa-person-walking", "nameHe": "הולך", "nameLat": "Holeḥ"},
+        {"id": "swimming", "icon": "fa-person-swimming", "nameHe": "שוחה", "nameLat": "Soḥe"}
       ]
     },
     {
@@ -91,12 +76,129 @@
     {
       "category": "Media & Music",
       "items": [
-        {"id": "camera", "icon": "fa-camera", "nameHe": "מצלמה", "nameLat": "Matzlema"},
+        {"id": "camera", "icon": "fa-camera", "nameHe": "מצלמה", "nameLat": "Matslema"},
         {"id": "music", "icon": "fa-music", "nameHe": "מוזיקה", "nameLat": "Muzika"},
         {"id": "headphones", "icon": "fa-headphones", "nameHe": "אוזניות", "nameLat": "Ozniyot"},
         {"id": "microphone", "icon": "fa-microphone", "nameHe": "מיקרופון", "nameLat": "Mikrofon"},
         {"id": "film", "icon": "fa-film", "nameHe": "סרט", "nameLat": "Seret"},
-        {"id": "play", "icon": "fa-play", "nameHe": "נגן", "nameLat": "Nagan"}
+        {"id": "play", "icon": "fa-play", "nameHe": "נגן", "nameLat": "Nagen"}
+      ]
+    },
+    {
+      "category": "Weather & Seasons",
+      "items": [
+        {"id": "cloud", "icon": "fa-cloud", "nameHe": "ענן", "nameLat": "Anan"},
+        {"id": "rain", "icon": "fa-cloud-showers-heavy", "nameHe": "גשם", "nameLat": "Geshem"},
+        {"id": "lightning", "icon": "fa-bolt", "nameHe": "ברק", "nameLat": "Barak"},
+        {"id": "snow", "icon": "fa-snowflake", "nameHe": "שלג", "nameLat": "Sheleg"},
+        {"id": "wind", "icon": "fa-wind", "nameHe": "רוח", "nameLat": "Ruaḥ"},
+        {"id": "umbrella", "icon": "fa-umbrella", "nameHe": "מטריה", "nameLat": "Mitriya"},
+        {"id": "thermometer", "icon": "fa-temperature-half", "nameHe": "מד חום", "nameLat": "Mad Ḥom"}
+      ]
+    },
+    {
+      "category": "Time & Calendar",
+      "items": [
+        {"id": "clock", "icon": "fa-clock", "nameHe": "שעון", "nameLat": "Shaon"},
+        {"id": "hourglass", "icon": "fa-hourglass-half", "nameHe": "שעון חול", "nameLat": "Shaon Ḥol"},
+        {"id": "stopwatch", "icon": "fa-stopwatch", "nameHe": "שעון עצר", "nameLat": "Shaon Etser"},
+        {"id": "calendar", "icon": "fa-calendar", "nameHe": "לוח שנה", "nameLat": "Luaḥ Shana"},
+        {"id": "bell", "icon": "fa-bell", "nameHe": "פעמון", "nameLat": "Paamon"}
+      ]
+    },
+    {
+      "category": "Technology & Devices",
+      "items": [
+        {"id": "laptop", "icon": "fa-laptop", "nameHe": "מחשב נייד", "nameLat": "Machshev Nayad"},
+        {"id": "mobile", "icon": "fa-mobile", "nameHe": "נייד", "nameLat": "Nayad"},
+        {"id": "keyboard", "icon": "fa-keyboard", "nameHe": "מקלדת", "nameLat": "Mikledet"},
+        {"id": "tv", "icon": "fa-tv", "nameHe": "טלוויזיה", "nameLat": "Televizya"},
+        {"id": "microchip", "icon": "fa-microchip", "nameHe": "שבב", "nameLat": "Shivav"},
+        {"id": "robot", "icon": "fa-robot", "nameHe": "רובוט", "nameLat": "Robot"}
+      ]
+    },
+    {
+      "category": "Travel & Map",
+      "items": [
+        {"id": "map", "icon": "fa-map", "nameHe": "מפה", "nameLat": "Mapa"},
+        {"id": "location", "icon": "fa-location-dot", "nameHe": "מיקום", "nameLat": "Mikum"},
+        {"id": "compass", "icon": "fa-compass", "nameHe": "מצפן", "nameLat": "Matspen"},
+        {"id": "route", "icon": "fa-route", "nameHe": "מסלול", "nameLat": "Maslul"},
+        {"id": "globe", "icon": "fa-globe", "nameHe": "גלובוס", "nameLat": "Globus"}
+      ]
+    },
+    {
+      "category": "Tools & Work",
+      "items": [
+        {"id": "hammer", "icon": "fa-hammer", "nameHe": "פטיש", "nameLat": "Patish"},
+        {"id": "wrench", "icon": "fa-wrench", "nameHe": "מפתח ברגים", "nameLat": "Mafteaḥ Bragim"},
+        {"id": "tools", "icon": "fa-screwdriver-wrench", "nameHe": "כלי עבודה", "nameLat": "Klei Avoda"},
+        {"id": "gear", "icon": "fa-gear", "nameHe": "גלגל שיניים", "nameLat": "Galgal Shinayim"},
+        {"id": "briefcase", "icon": "fa-briefcase", "nameHe": "תיק עסקים", "nameLat": "Tik Asakim"}
+      ]
+    },
+    {
+      "category": "Health & Safety",
+      "items": [
+        {"id": "firstaid", "icon": "fa-briefcase-medical", "nameHe": "תיק עזרה ראשונה", "nameLat": "Tik Ezra Rishona"},
+        {"id": "mednotes", "icon": "fa-notes-medical", "nameHe": "רישום רפואי", "nameLat": "Rishum Refui"},
+        {"id": "stethoscope", "icon": "fa-stethoscope", "nameHe": "סטטוסקופ", "nameLat": "Stetoskop"},
+        {"id": "syringe", "icon": "fa-syringe", "nameHe": "מזרק", "nameLat": "Mazrek"},
+        {"id": "heartpulse", "icon": "fa-heart-pulse", "nameHe": "דופק הלב", "nameLat": "Dofek HaLev"}
+      ]
+    },
+    {
+      "category": "Shopping & Money",
+      "items": [
+        {"id": "cart", "icon": "fa-cart-shopping", "nameHe": "עגלת קניות", "nameLat": "Eglat Kniyot"},
+        {"id": "bag", "icon": "fa-bag-shopping", "nameHe": "שקית קניות", "nameLat": "Sakit Kniyot"},
+        {"id": "creditcard", "icon": "fa-credit-card", "nameHe": "כרטיס אשראי", "nameLat": "Kartis Ashrai"},
+        {"id": "money", "icon": "fa-money-bill", "nameHe": "שטר כסף", "nameLat": "Shtar Kesef"},
+        {"id": "shekel", "icon": "fa-shekel-sign", "nameHe": "שקל", "nameLat": "Shekel"},
+        {"id": "tags", "icon": "fa-tags", "nameHe": "תגיות", "nameLat": "Tagiyot"}
+      ]
+    },
+    {
+      "category": "Symbols & Shapes",
+      "items": [
+        {"id": "heart", "icon": "fa-heart", "nameHe": "לב", "nameLat": "Lev"},
+        {"id": "star", "icon": "fa-star", "nameHe": "כוכב", "nameLat": "Kochav"},
+        {"id": "square", "icon": "fa-square", "nameHe": "ריבוע", "nameLat": "Ribua"},
+        {"id": "circle", "icon": "fa-circle", "nameHe": "עיגול", "nameLat": "Igul"},
+        {"id": "check", "icon": "fa-check", "nameHe": "אישור", "nameLat": "Ishur"},
+        {"id": "xmark", "icon": "fa-xmark", "nameHe": "ביטול", "nameLat": "Bitul"},
+        {"id": "plus", "icon": "fa-plus", "nameHe": "פלוס", "nameLat": "Plus"},
+        {"id": "minus", "icon": "fa-minus", "nameHe": "מינוס", "nameLat": "Minus"},
+        {"id": "exclamation", "icon": "fa-exclamation", "nameHe": "סימן קריאה", "nameLat": "Siman Kriya"},
+        {"id": "question", "icon": "fa-question", "nameHe": "שאלה", "nameLat": "Sheela"}
+      ]
+    },
+    {
+      "category": "Gestures & Faces",
+      "items": [
+        {"id": "smile", "icon": "fa-face-smile", "nameHe": "חיוך", "nameLat": "Ḥiyuch"},
+        {"id": "frown", "icon": "fa-face-frown", "nameHe": "מזעיף פנים", "nameLat": "Mezaef Panim"},
+        {"id": "thumbsup", "icon": "fa-thumbs-up", "nameHe": "לייק", "nameLat": "Like"},
+        {"id": "hand", "icon": "fa-hand", "nameHe": "כף יד", "nameLat": "Kaf Yad"},
+        {"id": "handshake", "icon": "fa-handshake", "nameHe": "לחיצת יד", "nameLat": "Leḥitzat Yad"}
+      ]
+    },
+    {
+      "category": "Sports & Games",
+      "items": [
+        {"id": "soccer", "icon": "fa-futbol", "nameHe": "כדורגל", "nameLat": "Kadur Regel"},
+        {"id": "chess", "icon": "fa-chess", "nameHe": "שחמט", "nameLat": "Shaḥmat"},
+        {"id": "dice", "icon": "fa-dice", "nameHe": "קוביות", "nameLat": "Kubiyot"},
+        {"id": "gamepad", "icon": "fa-gamepad", "nameHe": "בקר משחק", "nameLat": "Bakar Misḥak"},
+        {"id": "trophy", "icon": "fa-trophy", "nameHe": "גביע", "nameLat": "Gvia"}
+      ]
+    },
+    {
+      "category": "Science & Lab",
+      "items": [
+        {"id": "atom", "icon": "fa-atom", "nameHe": "אטום", "nameLat": "Atom"},
+        {"id": "flask", "icon": "fa-flask", "nameHe": "בקבוקון", "nameLat": "Bakbukon"},
+        {"id": "magnet", "icon": "fa-magnet", "nameHe": "מגנט", "nameLat": "Magnet"}
       ]
     }
   ]
